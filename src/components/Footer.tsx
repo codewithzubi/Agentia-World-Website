@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Github, Linkedin, Twitter } from "lucide-react"
+import { TbMessageChatbot } from "react-icons/tb";
 
 const footerSections = [
   {
@@ -23,7 +24,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link href="/" className="flex items-center text-xl font-bold mb-4">
-              <span className="text-purple-500 mr-2">□</span>
+              <span className="text-purple-500 mr-2"><TbMessageChatbot  className="w-8 h-10"/></span>
               Agentia World
             </Link>
             <p className="mb-4">Next-generation AI agents powering the future of enterprise intelligence.</p>

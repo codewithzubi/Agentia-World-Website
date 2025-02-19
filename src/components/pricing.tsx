@@ -55,7 +55,7 @@ export default function Pricing() {
           {plans.map((plan, index) => (
             <div
               key={plan.name}
-              className={`bg-gray-900 rounded-lg p-8 ${index === 1 ? "border-2 border-purple-500" : ""}`}
+              className={`bg-gray-900 rounded-lg p-8 transition-transform duration-300 transform hover:scale-105 hover:outline-none hover:ring-2 hover:ring-purple-700 hover:ring-opacity-50 ${index === 1 ? "border-2 border-purple-500" : ""}`}
             >
               <h3 className="text-2xl font-bold mb-4">{plan.name}</h3>
               <p className="text-4xl font-bold mb-6">
@@ -71,11 +71,7 @@ export default function Pricing() {
                 ))}
               </ul>
               <button
-                className={`w-full py-2 rounded-md font-semibold ${
-                  index === 1
-                    ? "bg-purple-600 hover:bg-purple-700 text-white"
-                    : "border border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white"
-                }`}
+                className={`w-full py-2 rounded-md font-semibold ${index === 1 ? "bg-purple-600 hover:bg-purple-700 text-white" : "border border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white"}`}
               >
                 Get Started
               </button>
@@ -86,4 +82,3 @@ export default function Pricing() {
     </section>
   )
 }
-

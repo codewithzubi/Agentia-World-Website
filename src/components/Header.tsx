@@ -3,6 +3,8 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
+import { TbMessageChatbot } from "react-icons/tb";
+
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -16,7 +18,9 @@ export default function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center text-xl font-bold">
-            <span className="text-purple-500 mr-2">□</span>
+            <span className="text-purple-500 mr-2">
+              <TbMessageChatbot className="w-8 h-10"/>
+            </span>
             Agentia World
           </Link>
           <div className="hidden md:flex space-x-6">
@@ -69,4 +73,3 @@ export default function Header() {
     </header>
   )
 }
-

@@ -28,7 +28,10 @@ export default function Solutions() {
         <p className="text-center text-gray-400 mb-12">Transforming industries with intelligent agents</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {solutions.map((solution, index) => (
-            <div key={index} className="bg-gray-800 rounded-lg p-6">
+            <div 
+              key={index} 
+              className="bg-gray-800 rounded-lg p-6 transition-transform duration-300 transform hover:scale-105 hover:outline hover:outline-1 hover:outline-purple-500 hover:shadow-lg"
+            >
               <solution.icon className="w-12 h-12 text-purple-500 mb-4" />
               <h3 className="text-xl font-semibold mb-2">{solution.title}</h3>
               <p className="text-gray-400">{solution.description}</p>
@@ -39,4 +42,3 @@ export default function Solutions() {
     </section>
   )
 }
-
